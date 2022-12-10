@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aqua;
+    display: grid;
+    grid-template-areas: "header header header"
+        "main main main"
+        "main main main"
+        "main main main"
+        "main main main"
+        "main main main"
+        "main main main"
+        "main main main"
+        "main main main"
+        "main main main"
+        "main main main"
+        "main main main"
+        "main main main"
+        "footer footer footer";
+    min-height: 100vh;
+}
+
+header {
+    grid-area: header;
+    background-color: blue;
+}
+
+main {
+    grid-area: main;
+    background-color: blanchedalmond;
+    grid-template-areas: "jumbo jumbo jumbo"
+        "blog blog blog"
+        "adds adds adds"
+    ;
+}
+
+.jumbotron {
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+}
+
+#titulo {
+    grid-column: 1;
+    background-color: red;
+}
+#texto {
+    grid-column: 2;
+    background-color: green;
+}
+#img {
+    grid-column: 3;
+    background-color: orange;
+    
+}
+
+.blog {
+    background-color: aqua;
+}
+
+.adds {
+    background-color: red;
+}
+
+footer {
+    grid-area: footer;
+    background-color: blueviolet;
+}
+
+h1 {
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+}
