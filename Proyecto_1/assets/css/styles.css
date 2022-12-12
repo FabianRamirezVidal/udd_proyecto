@@ -5,9 +5,13 @@
 }
 
 body {
-    background-color: aqua;
-    display: grid;
-    grid-template-areas: "header header header"
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        height: 100vh;
+        display: grid;
+        grid-template-areas: "header header header"
+        "header header header"
         "main main main"
         "main main main"
         "main main main"
@@ -22,6 +26,18 @@ body {
         "main main main"
         "footer footer footer";
     min-height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 header {
@@ -49,14 +65,16 @@ main {
     grid-column: 1;
     background-color: red;
 }
+
 #texto {
     grid-column: 2;
     background-color: green;
 }
+
 #img {
     grid-column: 3;
     background-color: orange;
-    
+
 }
 
 .blog {
