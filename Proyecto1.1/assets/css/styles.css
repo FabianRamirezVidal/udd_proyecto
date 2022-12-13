@@ -4,14 +4,15 @@
     box-sizing: border-box;
 }
 
-body {
-        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-        background-size: 400% 400%;
-        animation: gradient 15s ease infinite;
-        height: 100vh;
-        display: grid;
-        grid-template-areas: "header header header"
-        "header header header"
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+html body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "header header header"
         "main main main"
         "main main main"
         "main main main"
@@ -29,52 +30,32 @@ body {
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 header {
     grid-area: header;
-    background-color: blue;
+
 }
 
 main {
     grid-area: main;
     background-color: blanchedalmond;
-    grid-template-areas: "jumbo jumbo jumbo"
-        "blog blog blog"
-        "adds adds adds"
     ;
 }
 
 .jumbotron {
     background-color: antiquewhite;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    align-items: center;
-}
-
-#titulo {
-    grid-column: 1;
-    background-color: red;
-}
-
-#texto {
-    grid-column: 2;
-    background-color: green;
-}
-
-#img {
-    grid-column: 3;
-    background-color: orange;
-
 }
 
 .blog {
@@ -90,8 +71,3 @@ footer {
     background-color: blueviolet;
 }
 
-h1 {
-    font-size: larger;
-    font-weight: bold;
-    color: black;
-}
