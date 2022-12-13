@@ -10,7 +10,7 @@ html body {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    height: 200vh;
+    height: 300vh;
     display: grid;
     grid-template-areas: "header header header"
         "main main main"
@@ -60,7 +60,6 @@ main {
 
 .jumbotron>div {
     width: 45%;
-    margin: 5px;
     text-align: center;
 
 
@@ -81,30 +80,73 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
+
 }
 
-.blog >div {
+.blog>div {
     height: auto;
     width: 400px;
-    margin: 5px 5px 5px 5px;
+    margin: 10px 10px 10px 10px;
     text-align: center;
 }
 
-.blog >div>img {
+.blog>div>img {
     width: 400px;
     height: auto;
 }
 
 
 /* Adds Styles */
-.adds {
-    background-color: red;
+.process {
+    margin-top: 20px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
+.process>div {
+    height: auto;
+    width: 400px;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+.process>div>img {
+    width: 400px;
+    height: auto;
+}
+
+.process_text {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+
+/* footer styles */
 footer {
     grid-area: footer;
-    background-color: blueviolet;
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(60, 60, 60, 0.601);
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-content: center;
+}
+
+footer >li {
+    margin-left: 10px;
 }
 
 /* Navbar Styles */
@@ -114,6 +156,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: rgba(21, 21, 21, 0.259);
 
 }
 
@@ -258,3 +301,80 @@ li a:hover:not(.active) {
     }
 }
 
+/* Register styles */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    color: white;
+}
+
+input[type=submit] {
+    background-color: #454545;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #3b68ae;
+
+}
+
+.container {
+    border-radius: 5px;
+    background-color: rgba(21, 21, 21, 0.259);
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.register_text {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
