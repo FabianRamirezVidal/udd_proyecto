@@ -86,9 +86,14 @@ main {
 
 .blog >div {
     height: auto;
-    width: 200px;
+    width: 400px;
     margin: 5px 5px 5px 5px;
     text-align: center;
+}
+
+.blog >div>img {
+    width: 400px;
+    height: auto;
 }
 
 
