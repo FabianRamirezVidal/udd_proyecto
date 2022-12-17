@@ -144,7 +144,7 @@ footer {
     list-style: none;
     justify-content: center;
     align-content: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 footer>li {
@@ -388,6 +388,9 @@ input[type=submit]:hover {
     .jumbotron>div {
         width: 90%;
         text-align: center;
+    }
+    footer {
+        flex-direction: column;
     }
 }
 
